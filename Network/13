@@ -1,0 +1,4 @@
+DNS server
+
+Command :
+nc -zv 10.51.1.253 53
