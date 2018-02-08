@@ -1,1 +1,2 @@
+#!/bin/sh
 service ssh status | grep "Main PID" | cut -d' ' -f4

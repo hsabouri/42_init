@@ -1,0 +1,13 @@
+#!/bin/sh
+md5=sudo md5sum /etc/crontab
+
+if [ ! -f /var/crontab_md5]; then
+    echo $md5 > /var/crontab_md5
+else
+    echo $md5 > /var/crontab_md5_compare
+    diff_res=diff /var/crontab_md5 /var/crontab_md5_compare
+    last_md5=cat /var/crontab_md5
+    if [ "$diff" != "" ]; then
+        mail -a "Crontab file changed" root <<< "From\n    $last_md5\nto\n  $md5"
+        echo $md5 > /var/crontab_md5
+

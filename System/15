@@ -1,1 +1,2 @@
-kill
+#!/bin/sh
+killall tail

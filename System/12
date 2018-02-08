@@ -1,1 +1,2 @@
+#!/bin/sh
 du -s -B1 /var/*

@@ -1,1 +1,2 @@
+#!/bin/sh
 fdisk -l
