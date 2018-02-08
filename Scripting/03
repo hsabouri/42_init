@@ -1,0 +1,1 @@
+ls -lSoga ~/Téléchargements/ | grep "^-" | awk '{print $7}'

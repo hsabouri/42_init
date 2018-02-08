@@ -1,4 +1,2 @@
-We can't do it : need to be root on dumps
-
-Anyway, the command :
+#!/bin/sh
 echo "46.19.122.85	intra.42.fr" >> /etc/hostname

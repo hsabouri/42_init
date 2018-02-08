@@ -1,1 +1,2 @@
+#!/bin/sh
 nslookup -dns-ip=8.8.8.8 slash16.org

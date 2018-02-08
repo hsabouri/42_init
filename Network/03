@@ -1,1 +1,2 @@
-ifconfig awdl0 | grep "ether "
+#!/bin/sh
+ifconfig en1 | grep "ether "

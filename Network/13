@@ -1,4 +1,4 @@
-DNS server
+Serveur DHCP
 
-Command :
-nc -zv 10.51.1.253 53
+Found with :
+traceroute 10.51.1.253
