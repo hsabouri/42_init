@@ -1,1 +1,1 @@
-ls -lSoga ~/Téléchargements/ | grep "^-" | awk '{print $7}'
+ ls -lSoRga $1 | grep "^-" | awk '{print ""$3" - "$7""}' | sort -t' ' -nk1
